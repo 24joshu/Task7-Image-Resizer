@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resized Image</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>✅ Image Resized Successfully!</h1>
+    <img src="{{ url_for('download', filename=filename) }}" alt="Resized Image" width="300"><br><br>
+    <a href="{{ url_for('download', filename=filename) }}" class="btn">Download Image</a>
+    <a href="{{ url_for('index') }}" class="btn">Resize Another</a>
+  </div>
+</body>
+</html>
